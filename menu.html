@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<script type="text/javascript"src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript"src="js/bootstrap.js"></script>
+<title>空白模板</title>
+</head>
+
+<body>
+<div class="container">
+<div class="row">
+1、标签页
+注意.nav-tabs类需要.nav基类
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>
+</div>
+<div class="row">
+2、胶囊式标签页
+用相同的 HTML 标记，但要用.nav-pills代替。
+
+<ul class="nav nav-pills">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>
+</div>
+<div class="row">
+2、胶囊式标签页（竖向）
+用相同的 HTML 标记，但要用.nav-pills代替。
+
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>
+</div>
+<div class="row">
+3、两端对齐的导航(两端自适应-宽度平均分配)
+在大于768px的屏幕上，通过.nav-justified可以很容易的让标签页或胶囊式标签呈现出同等宽度。在小屏幕上，导航链接呈现堆叠样式。
+<ul class="nav nav-tabs nav-justified">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>
+<ul class="nav nav-pills nav-justified">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>
+</div>
+<div class="row">
+4、禁用的链接
+对任何导航（包括标签页，pills，或列表，加入.disabled使链接为灰色且没有鼠标悬停效果。
+<ul class="nav nav-pills nav-justified">
+  <li class="active"><a href="#">Home</a></li>
+  <li class="disabled"><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>
+</div>
+<div class="row">
+5、使用下拉菜单
+<ul class="nav nav-tabs">
+  <li class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>
+</div>
+<div class="row">
+6、带下拉菜单的胶囊式标签页
+<ul class="nav nav-pills">
+  <li class="dropdown active">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>
+</div>
+<div class="row">
+7、标签
+ 简单案例
+
+<h1>Example heading <span class="label label-default">New</span></h1>
+<span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+</div>
+<div class="row">
+8、面包屑导航
+ 用一个带方向的层次表明当前页面的位置。
+
+分割符自动地通过CSS的:before和content添加上了。
+
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+</div>
+<div class="row">
+9、案例
+将下拉菜单触发器和下拉菜单都包裹在.dropdown里，然后添加组成菜单的HTML代码
+	<div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+      </ul>
+    </div>
+</div>
+<div class="row">
+对齐选项
+给下拉菜单.dropdown-menu加上.text-right 使文字右对齐
+<div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu text-right" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+      </ul>
+    </div>
+</div>
+<div class="row">
+标题
+在任何下拉菜单中均可通过添加标题来标明一组动作
+<h1>下拉菜单</h1>
+      <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+        Dropdown
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu text-right" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation" class="dropdown-header">Dropdown header</li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation" class="dropdown-header">Dropdown header</li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+      </ul>
+    </div>
+</div>
+<div class="row">
+10、单按钮下拉菜单
+只要改变一些基本的标记，就能把按钮变成下拉菜单开关
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+</div>
+<div class="row">
+11、分裂式按钮下拉菜单
+相似地，分裂式按钮下拉菜单也需要同样的改变标记，但只要多一个分开的按钮
+<div class="btn-group">
+          <button type="button" class="btn btn-danger">Action</button>
+          <div class="dropdown">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+          </div>
+        </div
+</div>
+<div class="row">
+12、向上弹出式菜单
+给父元素添加.dropup就能使触发的下拉菜单在元素上方
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-default">Dropup</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </ul>
+</div>
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+
+</div>
+</body>
+</html>

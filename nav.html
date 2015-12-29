@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<script type="text/javascript"src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript"src="js/bootstrap.js"></script>
+<title>导航-模板</title>
+</head>
+
+<body>
+<div class="container">
+<div class="row">
+导航条是在您的应用或网站中作为导航标头的响应式元组件。它们在移动设备上可以折叠（并且可开可关），且在可用的视口宽度增加时变为水平展开模式
+<nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand1</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+<div class="row">
+1、自适应接口-图表缩略图
+<div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand2</a>
+      </div>
+</div>
+<div class="row">
+2、表单
+将表单放置于.navbar-form之内可以呈现很好的垂直对齐，并在较窄的viewport中呈现折叠状态。使用对齐选项可以确定其在导航条上出现的位置。
+
+通过使用.navbar-form和 .form-inline共享了很多代码。
+
+     <nav class="navbar navbar-default" role="navigation">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+     </nav> 
+</div>
+<div class="row">
+3、按钮
+对于不包含在form中的button元素，加上.navbar-btn这个class后可以让它在导航条里垂直居中
+<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+</div>
+<div class="row">
+4、文本
+把文本包裹在.navbar-text中时，为了有正确的行距和颜色，通常使用<p>标签。
+<p class="navbar-text">Signed in as Mark Otto</p>
+</div>
+<div class="row">
+5、非导航的链接
+或许你希望在标准的导航组件之外添加标准链接，那么，使用.navbar-link class可以让链接有正确的默认颜色和反色。
+<p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+</div>
+<div class="row">
+6、固定在顶部
+ 添加.navbar-fixed-top可以让导航条固定在顶部
+ 需要为body标签设置内补（padding）
+这个固定的导航条会遮住页面上的其它内容，除非你给<body>的上方设置了padding。用你自己的值，或用下面给出的代码都可以。提示：导航条的默认高度是50px。
+body { padding-top: 70px; }
+一定要放在Bootstrap CSS的核心文件之后
+ <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+     </nav>
+</div>
+<div class="row">
+7、固定在底部
+ 用.navbar-fixed-bottom代替
+ 	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+     </nav>
+</div>
+<div class="row">
+8、静止在顶部
+ 通过添加.navbar-static-top即可创建一个与页面的导航条。它会随着页面向下滚动而消失。和.navbar-fixed-*类不同的是，你不用给body添加padding
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+     </nav>
+</div>
+<div class="row">
+9、反色的导航条
+ 通过添加.navbar-inverse类可以改变导航条的外观
+ <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+     </nav>
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+<div class="row">
+
+</div>
+</div>
+</body>
+</html>

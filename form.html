@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<script type="text/javascript"src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript"src="js/bootstrap.js"></script>
+<title>表单示例</title>
+</head>
+
+<body>
+<h3>表单示例</h3>
+<h5>基本表单</h5>
+<form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<h5>水平表单</h5>
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+<h5>checkbox 和radio-默认</h5>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Option two can be something else and selecting it will deselect option one
+  </label>
+</div>
+
+<h5>Inline checkbox</h5>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+<h5>select</h5>
+<select multiple class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+<h5>for-form</h5>
+<form role="form">
+  <fieldset disabled>
+    <div class="form-group">
+      <label for="disabledTextInput">Disabled input</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+      <label for="disabledSelect">Disabled select menu</label>
+      <select id="disabledSelect" class="form-control">
+        <option>Disabled select</option>
+      </select>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Can't check this
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+
+<h5>校验状态</h5>
+<div class="form-group has-success">
+  <label class="control-label" for="inputSuccess">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess">
+</div>
+<div class="form-group has-warning">
+  <label class="control-label" for="inputWarning">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning">
+</div>
+<div class="form-group has-error">
+  <label class="control-label" for="inputError">Input with error</label>
+  <input type="text" class="form-control" id="inputError">
+</div>
+<h5>高度-尺寸</h5>
+	<input class="form-control input-lg" type="text" placeholder=".input-lg">
+    <input class="form-control" type="text" placeholder="Default input">
+    <input class="form-control input-sm" type="text" placeholder=".input-sm">
+    
+    <select class="form-control input-lg">...</select>
+    <select class="form-control">...</select>
+    <select class="form-control input-sm">...</select>
+<h5>帮助文本</h5>
+<span class="help-block">自己独占一行或多行的块级帮助文本。</span>
+<h5>按钮</h5>
+		<button type="button" class="btn btn-default">Default 默认</button>
+        <button type="button" class="btn btn-primary">Primary 主要操作</button>
+        <button type="button" class="btn btn-success">Success 成功</button>
+        <button type="button" class="btn btn-info">Info 信息</button>
+        <button type="button" class="btn btn-warning">Warning 警告</button>
+        <button type="button" class="btn btn-danger">Danger 危险</button>
+        <button type="button" class="btn btn-link">链接</button>
+
+	<p>
+	  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+	  <button type="button" class="btn btn-default btn-lg">Large button</button>
+	</p>
+	<p>
+	  <button type="button" class="btn btn-primary">Default button</button>
+	  <button type="button" class="btn btn-default">Default button</button>
+	</p>
+	<p>
+	  <button type="button" class="btn btn-primary btn-sm">Small button</button>
+	  <button type="button" class="btn btn-default btn-sm">Small button</button>
+	</p>
+	<p>
+	  <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+	  <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+	</p>
+	<p>通过给按钮添加.btn-block可以使其充满父节点100%的宽度，而且按钮也变为了块级（block）元素</p>
+	<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+	<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+	<p>当按钮处于活动状态时，其表现为被按压下（底色更深，边框夜色更深，内置阴影）。对于B<button>元素，是通过:active实现的。对于<a>元素，是通过.active实现的。然而，你还可以联合使用.active <button>并通过编程的方式使其处于活动状态</p>
+	<button type="button" class="btn btn-primary btn-lg active">Primary button</button>
+	<button type="button" class="btn btn-default btn-lg active">Button</button>
+	<p>链接元素</p>
+	<a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+	<a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+	<button type="button" class="btn btn-lg btn-primary" disabled="disabled">disabled Primary button</button>
+	<button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+	
+	<a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input">
+    <input class="btn btn-default" type="submit" value="Submit">
+</body>
+</html>
